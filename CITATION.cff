@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "Please cite the dataset you use; see the README in each dataset folder."
+type: dataset
+title: "Offentlig PAAS open data"
+authors:
+  - name: "Offentlig PAAS"
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: 2026-10-12
+repository-code: "https://github.com/offentlig-paas/open-data"
+url: "https://nye.offentlig-paas.no"
+keywords:
+  - public sector
+  - platform engineering
+  - AI coding tools
+  - survey
+references:
+  - type: data
+    title: "State of AI Coding Agents in the Norwegian Public Sector, wave 1 (2026)"
+    authors:
+      - family-names: "Flaatten"
+        given-names: "Hans Kristian"
+      - family-names: "Sandvik"
+        given-names: "Anders Olsen"
+    year: 2026
+    publisher:
+      name: "Offentlig PAAS"
+    url: "https://github.com/offentlig-paas/open-data/tree/main/state-of-ai-agents/2026"
+  - type: data
+    title: "State of Platforms in the Norwegian Public Sector, 2024"
+    authors:
+      - family-names: "Flaatten"
+        given-names: "Hans Kristian"
+    year: 2024
+    publisher:
+      name: "Offentlig PAAS"
+    url: "https://github.com/offentlig-paas/open-data/tree/main/state-of-platforms/2024"
+  - type: data
+    title: "State of Platforms in the Norwegian Public Sector, 2026"
+    authors:
+      - family-names: "Flaatten"
+        given-names: "Hans Kristian"
+    year: 2026
+    publisher:
+      name: "Offentlig PAAS"
+    url: "https://github.com/offentlig-paas/open-data/tree/main/state-of-platforms/2026"

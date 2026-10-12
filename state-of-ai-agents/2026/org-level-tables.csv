@@ -1,0 +1,96 @@
+table,measure,value,n,unit
+sample,organizations,57,,orgs
+sample,single-respondent organizations,30,57,orgs
+sample,multi-respondent organizations,27,57,orgs
+org-level majority vote: Adoption (Q5),most-developers,18,57,orgs
+org-level majority vote: Adoption (Q5),officially-approved,15,57,orgs
+org-level majority vote: Adoption (Q5),disagreement,15,57,orgs
+org-level majority vote: Adoption (Q5),some-teams,5,57,orgs
+org-level majority vote: Adoption (Q5),individual,4,57,orgs
+org-level majority vote: Policy (Q14),specific,23,57,orgs
+org-level majority vote: Policy (Q14),general,20,57,orgs
+org-level majority vote: Policy (Q14),disagreement,7,57,orgs
+org-level majority vote: Policy (Q14),no,4,57,orgs
+org-level majority vote: Policy (Q14),unknown,3,57,orgs
+org-level majority vote: Support (Q15),informal,25,57,orgs
+org-level majority vote: Support (Q15),disagreement,12,57,orgs
+org-level majority vote: Support (Q15),shared-resources,8,57,orgs
+org-level majority vote: Support (Q15),training,5,57,orgs
+org-level majority vote: Support (Q15),structured,4,57,orgs
+org-level majority vote: Support (Q15),none,<3,57,orgs
+org-level majority vote: Support (Q15),unknown,<3,57,orgs
+org-level majority vote: Decision (Q16),central,17,57,orgs
+org-level majority vote: Decision (Q16),disagreement,14,57,orgs
+org-level majority vote: Decision (Q16),approval-process,14,57,orgs
+org-level majority vote: Decision (Q16),unknown,4,57,orgs
+org-level majority vote: Decision (Q16),team,suppressed,57,orgs
+org-level majority vote: Decision (Q16),individual,3,57,orgs
+org-level majority vote: Decision (Q16),undecided,<3,57,orgs
+org-level majority vote: Vendor clarity (Q17),clarified,27,57,orgs
+org-level majority vote: Vendor clarity (Q17),partial,14,57,orgs
+org-level majority vote: Vendor clarity (Q17),disagreement,9,57,orgs
+org-level majority vote: Vendor clarity (Q17),unknown,4,57,orgs
+org-level majority vote: Vendor clarity (Q17),no,3,57,orgs
+org-level majority vote: Measurement (Q18),informal,20,57,orgs
+org-level majority vote: Measurement (Q18),disagreement,14,57,orgs
+org-level majority vote: Measurement (Q18),unknown,12,57,orgs
+org-level majority vote: Measurement (Q18),own-metrics,6,57,orgs
+org-level majority vote: Measurement (Q18),vendor-data,suppressed,57,orgs
+org-level majority vote: Measurement (Q18),none,<3,57,orgs
+org-level majority vote: Code review (Q19),no-special,34,57,orgs
+org-level majority vote: Code review (Q19),disagreement,9,57,orgs
+org-level majority vote: Code review (Q19),verbal,7,57,orgs
+org-level majority vote: Code review (Q19),written,3,57,orgs
+org-level majority vote: Code review (Q19),unknown,<3,57,orgs
+org-level majority vote: Code review (Q19),not-applicable,<3,57,orgs
+org-level majority vote: Code review (Q19),written-automated,<3,57,orgs
+intra-org disagreement vs permutation null: Adoption (Q5),observed orgs with disagreement,23,27,orgs
+intra-org disagreement vs permutation null: Adoption (Q5),observed share,85%,27,percent
+intra-org disagreement vs permutation null: Adoption (Q5),null mean share,81%,27,percent
+intra-org disagreement vs permutation null: Adoption (Q5),null 95% range,67–93%,27,percent
+intra-org disagreement vs permutation null: Adoption (Q5),P(null>=obs),0.374,27,p
+intra-org disagreement vs permutation null: Adoption (Q5),P(null<=obs),0.809,27,p
+intra-org disagreement vs permutation null: Policy (Q14),observed orgs with disagreement,14,27,orgs
+intra-org disagreement vs permutation null: Policy (Q14),observed share,52%,27,percent
+intra-org disagreement vs permutation null: Policy (Q14),null mean share,79%,27,percent
+intra-org disagreement vs permutation null: Policy (Q14),null 95% range,63–93%,27,percent
+intra-org disagreement vs permutation null: Policy (Q14),P(null>=obs),1.000,27,p
+intra-org disagreement vs permutation null: Policy (Q14),P(null<=obs),0.001,27,p
+intra-org disagreement vs permutation null: Support (Q15),observed orgs with disagreement,18,27,orgs
+intra-org disagreement vs permutation null: Support (Q15),observed share,67%,27,percent
+intra-org disagreement vs permutation null: Support (Q15),null mean share,84%,27,percent
+intra-org disagreement vs permutation null: Support (Q15),null 95% range,70–96%,27,percent
+intra-org disagreement vs permutation null: Support (Q15),P(null>=obs),0.996,27,p
+intra-org disagreement vs permutation null: Support (Q15),P(null<=obs),0.014,27,p
+intra-org disagreement vs permutation null: Decision (Q16),observed orgs with disagreement,20,27,orgs
+intra-org disagreement vs permutation null: Decision (Q16),observed share,74%,27,percent
+intra-org disagreement vs permutation null: Decision (Q16),null mean share,83%,27,percent
+intra-org disagreement vs permutation null: Decision (Q16),null 95% range,70–96%,27,percent
+intra-org disagreement vs permutation null: Decision (Q16),P(null>=obs),0.944,27,p
+intra-org disagreement vs permutation null: Decision (Q16),P(null<=obs),0.148,27,p
+intra-org disagreement vs permutation null: Vendor clarity (Q17),observed orgs with disagreement,14,27,orgs
+intra-org disagreement vs permutation null: Vendor clarity (Q17),observed share,52%,27,percent
+intra-org disagreement vs permutation null: Vendor clarity (Q17),null mean share,77%,27,percent
+intra-org disagreement vs permutation null: Vendor clarity (Q17),null 95% range,63–89%,27,percent
+intra-org disagreement vs permutation null: Vendor clarity (Q17),P(null>=obs),1.000,27,p
+intra-org disagreement vs permutation null: Vendor clarity (Q17),P(null<=obs),0.001,27,p
+intra-org disagreement vs permutation null: Measurement (Q18),observed orgs with disagreement,26,27,orgs
+intra-org disagreement vs permutation null: Measurement (Q18),observed share,96%,27,percent
+intra-org disagreement vs permutation null: Measurement (Q18),null mean share,83%,27,percent
+intra-org disagreement vs permutation null: Measurement (Q18),null 95% range,70–96%,27,percent
+intra-org disagreement vs permutation null: Measurement (Q18),P(null>=obs),0.033,27,p
+intra-org disagreement vs permutation null: Measurement (Q18),P(null<=obs),0.995,27,p
+intra-org disagreement vs permutation null: Code review (Q19),observed orgs with disagreement,19,27,orgs
+intra-org disagreement vs permutation null: Code review (Q19),observed share,70%,27,percent
+intra-org disagreement vs permutation null: Code review (Q19),null mean share,72%,27,percent
+intra-org disagreement vs permutation null: Code review (Q19),null 95% range,59–85%,27,percent
+intra-org disagreement vs permutation null: Code review (Q19),P(null>=obs),0.693,27,p
+intra-org disagreement vs permutation null: Code review (Q19),P(null<=obs),0.516,27,p
+org-level Spearman: adoption vs governance index,rho (main index),0.441,42,orgs
+org-level Spearman: adoption vs governance index,permutation p (main index),0.0040,42,orgs
+org-level Spearman: adoption vs governance index,rho (policy = specific or general),0.395,42,orgs
+org-level Spearman: adoption vs governance index,permutation p (policy = specific or general),0.0093,42,orgs
+org-level Spearman: adoption vs governance index,rho (strict decision/measurement),0.467,42,orgs
+org-level Spearman: adoption vs governance index,permutation p (strict decision/measurement),0.0022,42,orgs
+org-union shadow robustness (respondents),broad shadow,60,96,respondents
+org-union shadow robustness (respondents),narrow shadow,27,96,respondents
