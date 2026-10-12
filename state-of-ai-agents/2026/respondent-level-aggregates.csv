@@ -1,0 +1,43 @@
+table,measure,value,n,unit
+"developer team size (Q3), original bands",51-200,47,115,respondents
+"developer team size (Q3), original bands",200+,36,115,respondents
+"developer team size (Q3), original bands",11-50,24,115,respondents
+"developer team size (Q3), original bands",1-10,4,115,respondents
+"developer team size (Q3), original bands",unknown,4,115,respondents
+"approved tools (Q6), original categories",copilot,94,115,respondents
+"approved tools (Q6), original categories",claude-code,40,115,respondents
+"approved tools (Q6), original categories",codex,16,115,respondents
+"approved tools (Q6), original categories",cursor,13,115,respondents
+"approved tools (Q6), original categories",none,9,115,respondents
+"approved tools (Q6), original categories",jetbrains-ai,9,115,respondents
+"approved tools (Q6), original categories",internal-platform,6,115,respondents
+"approved tools (Q6), original categories",unknown,4,115,respondents
+"approved tools (Q6), original categories",gemini,3,115,respondents
+"approved tools (Q6), original categories",other-tool,<3,115,respondents
+"approved tools (Q6), original categories",code-review-ai,<3,115,respondents
+"approved tools (Q6), original categories",amazon-q,<3,115,respondents
+"approved tools (Q6), original categories",open-source,<3,115,respondents
+"personally used tools (Q8b), original categories",copilot,78,106,respondents
+"personally used tools (Q8b), original categories",claude-code,48,106,respondents
+"personally used tools (Q8b), original categories",browser-llm,45,106,respondents
+"personally used tools (Q8b), original categories",open-source,18,106,respondents
+"personally used tools (Q8b), original categories",codex,17,106,respondents
+"personally used tools (Q8b), original categories",gemini,11,106,respondents
+"personally used tools (Q8b), original categories",cursor,9,106,respondents
+"personally used tools (Q8b), original categories",windsurf,7,106,respondents
+"personally used tools (Q8b), original categories",jetbrains-ai,3,106,respondents
+"personally used tools (Q8b), original categories",other-tool,<3,106,respondents
+"personally used tools (Q8b), original categories",code-review-ai,<3,106,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",daily,73,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",several-weekly,15,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",weekly,10,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",(empty),9,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",monthly,7,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",rarely,<3,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",no-special,71,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",verbal,14,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",unknown,13,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written,8,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written-automated,7,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",not-applicable,<3,115,respondents
+"shadow tool breakdown (broad, all confidence), as in Figure 3",open-source,15,96,respondents
