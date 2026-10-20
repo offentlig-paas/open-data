@@ -49,6 +49,7 @@ table,measure,value,n,unit,question_id
 "q5-adoption-level, survey option values",some-teams,17,115,respondents,q5-adoption-level
 "q5-adoption-level, survey option values",officially-approved,45,115,respondents,q5-adoption-level
 "q5-adoption-level, survey option values",most-developers,45,115,respondents,q5-adoption-level
+"q5-adoption-level, survey option values",unknown,0,115,respondents,q5-adoption-level
 "q5b-confidence, survey option values",certain,56,114,respondents,q5b-confidence
 "q5b-confidence, survey option values",fairly-sure,47,114,respondents,q5b-confidence
 "q5b-confidence, survey option values",estimate,11,114,respondents,q5b-confidence
