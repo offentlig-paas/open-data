@@ -10,7 +10,7 @@ column,question,answer,n
 3,Type organisasjon,Universitet,<3
 4,Ansatte,100–499,10
 4,Ansatte,500–999,8
-4,Ansatte,2000–4999,4
+4,Ansatte,2000–4999,suppressed
 4,Ansatte,15000+,4
 4,Ansatte,1000–1999,4
 4,Ansatte,5000–14999,4
@@ -52,7 +52,7 @@ column,question,answer,n
 9,Hvilke selvbetjente tjenester består plattformen deres av?,"Databaser, meldingskøer og lagring",14
 9,Hvilke selvbetjente tjenester består plattformen deres av?,Nettverk/brannmur (interntrafikk),13
 9,Hvilke selvbetjente tjenester består plattformen deres av?,Nettverk/brannmur (eksterntrafikk),13
-9,Hvilke selvbetjente tjenester består plattformen deres av?,(no answer),5
+9,Hvilke selvbetjente tjenester består plattformen deres av?,(no answer),suppressed
 9,Hvilke selvbetjente tjenester består plattformen deres av?,other,<3
 10,Ca. hvor mange applikasjonsteam benytter seg av plattformen deres i dag?,11-50,12
 10,Ca. hvor mange applikasjonsteam benytter seg av plattformen deres i dag?,0-5,7
@@ -92,7 +92,7 @@ column,question,answer,n
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?","Nivå 4, Optimalisering — Administrerte tjenester",4
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 1, Provisorisk – Ad hoc",16
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 2, Operasjonalisert — Konsekvent innsamling",13
-16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,(no answer),5
+16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,(no answer),suppressed
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 4, Optimalisering — Kvantitativ og kvalitativ",<3
 17,Bruker dere Kubernetes?,Ja,23
 17,Bruker dere Kubernetes?,Nei,12
@@ -116,12 +116,12 @@ column,question,answer,n
 19,Hvor mange år har dere kjørt Kubernetes i produksjon?,6,<3
 20,Hvor mange Kubernetes clustere har dere?,1-5,13
 20,Hvor mange Kubernetes clustere har dere?,(no answer),12
-20,Hvor mange Kubernetes clustere har dere?,Mer enn 10,8
+20,Hvor mange Kubernetes clustere har dere?,Mer enn 10,suppressed
 20,Hvor mange Kubernetes clustere har dere?,6-10,<3
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,(no answer),13
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,100-500,9
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,0-100,6
-21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,500-1000,3
+21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,500-1000,suppressed
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,1000-2000,3
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,2000+,<3
 22,Utvikler dere egne Kubernetes operators?,(no answer),35
@@ -172,7 +172,7 @@ column,question,answer,n
 30,Hva bruker dere for pakking av applikasjoner?,Kustomize,9
 30,Hva bruker dere for pakking av applikasjoner?,(no answer),7
 30,Hva bruker dere for pakking av applikasjoner?,JIB,4
-30,Hva bruker dere for pakking av applikasjoner?,Packer,3
+30,Hva bruker dere for pakking av applikasjoner?,Packer,suppressed
 30,Hva bruker dere for pakking av applikasjoner?,Buildpacks,<3
 31,Hva bruker dere for deploy av applikasjoner?,GitHub Actions,11
 31,Hva bruker dere for deploy av applikasjoner?,Argo,9
@@ -181,7 +181,7 @@ column,question,answer,n
 31,Hva bruker dere for deploy av applikasjoner?,Azure DevOps,6
 31,Hva bruker dere for deploy av applikasjoner?,other,5
 31,Hva bruker dere for deploy av applikasjoner?,GitLab Pipelines,5
-31,Hva bruker dere for deploy av applikasjoner?,kubectl apply,3
+31,Hva bruker dere for deploy av applikasjoner?,kubectl apply,suppressed
 31,Hva bruker dere for deploy av applikasjoner?,(no answer),<3
 31,Hva bruker dere for deploy av applikasjoner?,Harness,<3
 32,Hva bruker dere for nettverksikkerhet?,(no answer),14

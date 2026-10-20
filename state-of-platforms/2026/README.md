@@ -13,3 +13,7 @@ The table is produced by `../scripts/aggregate.py` from the non-public response 
 > Flaatten, H. K. (2026). *State of Platforms in the Norwegian Public Sector, 2026* [Data set]. Offentlig PAAS. https://github.com/offentlig-paas/open-data/tree/main/state-of-platforms/2026
 
 License: data and documentation CC BY 4.0 (`LICENSE` in the repository root); script MIT (`../scripts/LICENSE`).
+
+## Changes
+
+- 2026-10-20 (v1.1): secondary suppression. Cells that could be recovered from question totals are now hidden as `suppressed`.

@@ -7,7 +7,7 @@ File: `state-of-platforms-2024-aggregate.csv` (UTF-8, comma-separated, header ro
 - `column`: position of the question in the original response file (column 1, organization, is not published). Map to question numbers via `instrument.md`.
 - `question`: question text as shown in the form (Norwegian).
 - `answer`: answer option. `(no answer)` means not shown or left blank. `other` means text that is not one of the listed options; the text itself is not published.
-- `n`: number of responses giving this answer. Counts below 3 are shown as `<3`. For single-choice questions the totals allow these to be recovered; we consider univariate counts non-disclosive.
+- `n`: number of responses giving this answer. Counts below 3 are shown as `<3`. If a question would then have only one hidden cell, or hidden cells totalling under 3, the next-smallest cells are also hidden and shown as `suppressed`, so no hidden count can be worked out from the totals.
 
 The first data row (`responses`) gives the total number of responses.
 
