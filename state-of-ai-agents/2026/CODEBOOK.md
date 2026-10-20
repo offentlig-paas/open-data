@@ -20,7 +20,9 @@ Version 1.0 published multi-select answers as raw combinations. Combined with ro
 - Adds per-option flags for Q6, Q8b and Q20 (only options chosen by at least 10 respondents; the rest are folded into `…_other`), top-coded counts (`q6_n_approved`, `q8b_n_used`, `q9_n_modes`, `q10_n_connected`) and `shadow_use`.
 - Merges Q5 into `formal` and `informal`, and folds approved tools other than Copilot and Claude Code into `q6_other`.
 - Guarantees k ≥ 3 on the quasi-identifier set role + developer team size + Q5 + `q6_copilot` + `q6_claude-code` + `q6_other` + `q6_n_approved`: every combination of these seven columns occurs in at least 3 rows. Unique rows on role + size + Q5 + Q6: 50 in v1.0, 0 in v1.1 (smallest group: 3). To reach this, 151 values in these columns are set to `suppressed` in 40 rows. No rows are removed.
-- In groups (equal on all seven columns) with fewer than 5 rows, Q23 and `shadow_use` are set to `suppressed` where every respondent in the group gave the same answer. This affects 38 values (Q23: 6, `shadow_use`: 32).
+- The guarantee covers only these seven columns. The other single-choice columns (Q7, Q14–Q19 and so on) are not part of it: combined with the seven columns they make many rows unique again. Someone who knows how an organization answered its governance questions can therefore still single out that organization's rows. Do not try to identify respondents or organizations.
+- In groups (equal on all seven columns) with fewer than 5 rows, Q23 and `shadow_use` are set to `suppressed` where every respondent in the group gave the same answer. This affects 42 values (Q23: 6, `shadow_use`: 36).
+- `shadow_use` follows from the Q6 and Q8b columns, so a suppressed value can often be worked out again (for example, `q8b_browser-llm` = 1 always means `yes`, because browser tools are never approved). In the 15 rows where this was possible, or where `shadow_use` together with the Q8b flags revealed a suppressed Q6 value, 2 more `shadow_use` values and 62 Q8b values (flags and `q8b_n_used`) are set to `suppressed`. In total 38 `shadow_use` values are suppressed, and none of them, nor any suppressed Q6 value, can be derived from the Q6, Q8b and `shadow_use` columns. This was checked by trying every possible Q6 and Q8b answer.
 
 Per-option counts for all codes, including the folded ones, are given in the column sections below and in `respondent-level-aggregates.csv`. The analysis scripts in `scripts/` were written for version 1.0 and do not run on version 1.1.
 
@@ -223,13 +225,13 @@ Flags are `1` (chosen) or `0`. Empty: question not shown. `suppressed`: see [Cha
 
 | Column | Source | Values |
 |---|---|---|
-| `q6_copilot`, `q6_claude-code` | Q6 approved tools | `1`/`0`, `unknown` (only `unknown` chosen), `suppressed` |
+| `q6_copilot`, `q6_claude-code` | Q6 approved tools | `1`/`0`, `suppressed` (includes the respondents who chose only `unknown`) |
 | `q6_other` | Q6 | `1` if any other approved tool (codex, cursor, jetbrains-ai, gemini, other) |
 | `q6_n_approved` | Q6 | number of approved tools: `0`, `1`, `2`, `3+` |
-| `q8b_copilot`, `q8b_claude-code`, `q8b_browser-llm`, `q8b_open-source`, `q8b_codex`, `q8b_gemini` | Q8b tools used | `1`/`0` |
+| `q8b_copilot`, `q8b_claude-code`, `q8b_browser-llm`, `q8b_open-source`, `q8b_codex`, `q8b_gemini` | Q8b tools used | `1`/`0`, `suppressed` |
 | `q8b_other` | Q8b | `1` if any other tool used (cursor, windsurf, jetbrains-ai, other) |
 | `q8b_n_used` | Q8b | number of tools used: `1`, `2`, `3`, `4+` |
-| `shadow_use` | Q8b and Q6 | `yes` if the respondent uses a tool (Q8b, in the merged v1.0 codes) not among the approved tools (Q6); `no`; `unknown` if Q6 is `unknown`; `suppressed` |
+| `shadow_use` | Q8b and Q6 | `yes` if the respondent uses a tool (Q8b, in the merged v1.0 codes) not among the approved tools (Q6); `no`; `suppressed` (includes the respondents who chose only `unknown` in Q6) |
 | `q9_n_modes` | Q9 usage modes | number of modes: `1` to `5`, `6+` |
 | `q10_n_connected` | Q10 connected systems | number of systems (`none` = 0): `0`, `1`, `2`, `3+` |
 | `q20_skill-loss`, `q20_code-quality`, `q20_hallucinations`, `q20_security`, `q20_privacy`, `q20_cost` | Q20 concerns | `1`/`0` |
@@ -240,7 +242,7 @@ Flags are `1` (chosen) or `0`. Empty: question not shown. `suppressed`: see [Cha
 
 ## `org-level-tables.csv`
 
-Aggregate organization-level results, computed from the non-public file with the organization column using the same code as the analysis script. Columns: `table`, `measure`, `value`, `n` (denominator), `unit` (`orgs`, `respondents`, `percent` or `p`). Counts below 3 are shown as `<3`. For single-choice questions the totals allow these to be recovered; we consider univariate counts non-disclosive. Tables:
+Aggregate organization-level results, computed from the non-public file with the organization column using the same code as the analysis script. Columns: `table`, `measure`, `value`, `n` (denominator), `unit` (`orgs`, `respondents`, `percent` or `p`). Counts below 3 are shown as `<3`. So that a hidden count cannot be worked out from the total, the next-smallest counts in the same table are also hidden, shown as `suppressed`, until at least two cells and at least 3 respondents or organizations are hidden (version 1.1, same rule as State of Platforms). Tables:
 
 - `sample`: number of organizations, and of organizations with one or several respondents.
 - `org-level majority vote: …`: the organization's answer by majority vote among its respondents, per question; `disagreement` means no majority.
@@ -250,4 +252,4 @@ Aggregate organization-level results, computed from the non-public file with the
 
 ## `respondent-level-aggregates.csv`
 
-Respondent-level counts that the merged codes in the CSV no longer show: developer team size in the original form bands, and Q6/Q8b tools in the original categories, Q11 and Q19 in the original codes, and the Figure 3 open-source shadow count (15), which the merged Q6 codes change to 16. Same columns as `org-level-tables.csv`; Counts below 3 are shown as `<3`. For single-choice questions the totals allow these to be recovered; we consider univariate counts non-disclosive.
+Respondent-level counts that the merged codes in the CSV no longer show: developer team size in the original form bands, and Q6/Q8b tools in the original categories, Q11 and Q19 in the original codes, and the Figure 3 open-source shadow count (15), which the merged Q6 codes change to 16. Same columns as `org-level-tables.csv`, with the same `<3` and `suppressed` rule.

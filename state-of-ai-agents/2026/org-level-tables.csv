@@ -23,7 +23,7 @@ org-level majority vote: Decision (Q16),central,17,57,orgs
 org-level majority vote: Decision (Q16),disagreement,14,57,orgs
 org-level majority vote: Decision (Q16),approval-process,14,57,orgs
 org-level majority vote: Decision (Q16),unknown,4,57,orgs
-org-level majority vote: Decision (Q16),team,3,57,orgs
+org-level majority vote: Decision (Q16),team,suppressed,57,orgs
 org-level majority vote: Decision (Q16),individual,3,57,orgs
 org-level majority vote: Decision (Q16),undecided,<3,57,orgs
 org-level majority vote: Vendor clarity (Q17),clarified,27,57,orgs
@@ -35,7 +35,7 @@ org-level majority vote: Measurement (Q18),informal,20,57,orgs
 org-level majority vote: Measurement (Q18),disagreement,14,57,orgs
 org-level majority vote: Measurement (Q18),unknown,12,57,orgs
 org-level majority vote: Measurement (Q18),own-metrics,6,57,orgs
-org-level majority vote: Measurement (Q18),vendor-data,4,57,orgs
+org-level majority vote: Measurement (Q18),vendor-data,suppressed,57,orgs
 org-level majority vote: Measurement (Q18),none,<3,57,orgs
 org-level majority vote: Code review (Q19),no-special,34,57,orgs
 org-level majority vote: Code review (Q19),disagreement,9,57,orgs

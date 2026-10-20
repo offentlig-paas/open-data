@@ -25,19 +25,19 @@ table,measure,value,n,unit
 "personally used tools (Q8b), original categories",gemini,11,106,respondents
 "personally used tools (Q8b), original categories",cursor,9,106,respondents
 "personally used tools (Q8b), original categories",windsurf,7,106,respondents
-"personally used tools (Q8b), original categories",jetbrains-ai,3,106,respondents
+"personally used tools (Q8b), original categories",jetbrains-ai,suppressed,106,respondents
 "personally used tools (Q8b), original categories",other-tool,<3,106,respondents
 "personally used tools (Q8b), original categories",code-review-ai,<3,106,respondents
 "Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",daily,73,115,respondents
 "Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",several-weekly,15,115,respondents
 "Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",weekly,10,115,respondents
 "Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",(empty),9,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",monthly,7,115,respondents
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",monthly,suppressed,115,respondents
 "Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",rarely,<3,115,respondents
 "Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",no-special,71,115,respondents
 "Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",verbal,14,115,respondents
 "Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",unknown,13,115,respondents
 "Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written,8,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written-automated,7,115,respondents
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written-automated,suppressed,115,respondents
 "Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",not-applicable,<3,115,respondents
 "shadow tool breakdown (broad, all confidence), as in Figure 3",open-source,15,96,respondents

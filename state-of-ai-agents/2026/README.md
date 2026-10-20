@@ -11,7 +11,7 @@ Survey of AI coding tool adoption, governance and concerns among developers and 
 
 ## Changes
 
-- 2026-10-20 (v1.1): multi-select answers (Q6, Q8b, Q9, Q10, Q20) are no longer published as raw combinations, because they could single out an organization. They are replaced by 0/1 flags for common options, top-coded counts and `shadow_use`. Every combination of role, team size, adoption level (Q5) and the approved-tool columns now has at least 3 respondents; values that broke this are set to `suppressed`. See `CODEBOOK.md`, "Changes in v1.1".
+- 2026-10-20 (v1.1): multi-select answers (Q6, Q8b, Q9, Q10, Q20) are no longer published as raw combinations, because they could single out an organization. They are replaced by 0/1 flags for common options, top-coded counts and `shadow_use`. Every combination of role, team size, adoption level (Q5) and the approved-tool columns now has at least 3 respondents; values that broke this are set to `suppressed`. In the aggregate tables, single hidden counts that could be recovered from the totals are protected by hiding more cells (`suppressed`). See `CODEBOOK.md`, "Changes in v1.1".
 
 ## Reproduce the analysis
 
