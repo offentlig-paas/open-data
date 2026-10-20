@@ -1,43 +1,141 @@
-table,measure,value,n,unit
-"developer team size (Q3), original bands",51-200,47,115,respondents
-"developer team size (Q3), original bands",200+,36,115,respondents
-"developer team size (Q3), original bands",11-50,24,115,respondents
-"developer team size (Q3), original bands",1-10,4,115,respondents
-"developer team size (Q3), original bands",unknown,4,115,respondents
-"approved tools (Q6), original categories",copilot,94,115,respondents
-"approved tools (Q6), original categories",claude-code,40,115,respondents
-"approved tools (Q6), original categories",codex,16,115,respondents
-"approved tools (Q6), original categories",cursor,13,115,respondents
-"approved tools (Q6), original categories",none,9,115,respondents
-"approved tools (Q6), original categories",jetbrains-ai,9,115,respondents
-"approved tools (Q6), original categories",internal-platform,6,115,respondents
-"approved tools (Q6), original categories",unknown,4,115,respondents
-"approved tools (Q6), original categories",gemini,3,115,respondents
-"approved tools (Q6), original categories",other-tool,<3,115,respondents
-"approved tools (Q6), original categories",code-review-ai,<3,115,respondents
-"approved tools (Q6), original categories",amazon-q,<3,115,respondents
-"approved tools (Q6), original categories",open-source,<3,115,respondents
-"personally used tools (Q8b), original categories",copilot,78,106,respondents
-"personally used tools (Q8b), original categories",claude-code,48,106,respondents
-"personally used tools (Q8b), original categories",browser-llm,45,106,respondents
-"personally used tools (Q8b), original categories",open-source,18,106,respondents
-"personally used tools (Q8b), original categories",codex,17,106,respondents
-"personally used tools (Q8b), original categories",gemini,11,106,respondents
-"personally used tools (Q8b), original categories",cursor,9,106,respondents
-"personally used tools (Q8b), original categories",windsurf,7,106,respondents
-"personally used tools (Q8b), original categories",jetbrains-ai,suppressed,106,respondents
-"personally used tools (Q8b), original categories",other-tool,<3,106,respondents
-"personally used tools (Q8b), original categories",code-review-ai,<3,106,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",daily,73,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",several-weekly,15,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",weekly,10,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",(empty),9,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",monthly,suppressed,115,respondents
-"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",rarely,<3,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",no-special,71,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",verbal,14,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",unknown,13,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written,8,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written-automated,suppressed,115,respondents
-"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",not-applicable,<3,115,respondents
-"shadow tool breakdown (broad, all confidence), as in Figure 3",open-source,15,96,respondents
+table,measure,value,n,unit,question_id
+"developer team size (Q3), original bands",51-200,47,115,respondents,q3-dev-count
+"developer team size (Q3), original bands",200+,36,115,respondents,q3-dev-count
+"developer team size (Q3), original bands",11-50,24,115,respondents,q3-dev-count
+"developer team size (Q3), original bands",1-10,4,115,respondents,q3-dev-count
+"developer team size (Q3), original bands",unknown,4,115,respondents,q3-dev-count
+"approved tools (Q6), original categories",copilot,94,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",claude-code,40,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",codex,16,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",cursor,13,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",none,9,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",jetbrains-ai,9,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",internal-platform,6,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",unknown,4,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",gemini,3,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",other-tool,<3,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",code-review-ai,<3,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",amazon-q,<3,115,respondents,q6-approved-tools
+"approved tools (Q6), original categories",open-source,<3,115,respondents,q6-approved-tools
+"personally used tools (Q8b), original categories",copilot,78,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",claude-code,48,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",browser-llm,45,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",open-source,18,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",codex,17,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",gemini,11,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",cursor,9,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",windsurf,7,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",jetbrains-ai,suppressed,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",other-tool,<3,106,respondents,q8b-personal-tools
+"personally used tools (Q8b), original categories",code-review-ai,<3,106,respondents,q8b-personal-tools
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",daily,73,115,respondents,q11-frequency
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",several-weekly,15,115,respondents,q11-frequency
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",weekly,10,115,respondents,q11-frequency
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",(empty),9,115,respondents,q11-frequency
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",monthly,suppressed,115,respondents,q11-frequency
+"Hvor ofte bruker du KI-kodeverktøy i arbeidet ditt?, original codes",rarely,<3,115,respondents,q11-frequency
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",no-special,71,115,respondents,q17-code-review
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",verbal,14,115,respondents,q17-code-review
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",unknown,13,115,respondents,q17-code-review
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written,8,115,respondents,q17-code-review
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",written-automated,suppressed,115,respondents,q17-code-review
+"Hvordan håndteres KI-generert kode i kodegjennomgang (code review)?, original codes",not-applicable,<3,115,respondents,q17-code-review
+"shadow tool breakdown (broad, all confidence), as in Figure 3",open-source,15,96,respondents,
+"q2-role, survey option values",organizational-leadership,15,115,respondents,q2-role
+"q2-role, survey option values",practitioner,56,115,respondents,q2-role
+"q2-role, survey option values",technical-leadership,44,115,respondents,q2-role
+"q5-adoption-level, survey option values",not-in-use,0,115,respondents,q5-adoption-level
+"q5-adoption-level, survey option values",individual,8,115,respondents,q5-adoption-level
+"q5-adoption-level, survey option values",some-teams,17,115,respondents,q5-adoption-level
+"q5-adoption-level, survey option values",officially-approved,45,115,respondents,q5-adoption-level
+"q5-adoption-level, survey option values",most-developers,45,115,respondents,q5-adoption-level
+"q5b-confidence, survey option values",certain,56,114,respondents,q5b-confidence
+"q5b-confidence, survey option values",fairly-sure,47,114,respondents,q5b-confidence
+"q5b-confidence, survey option values",estimate,11,114,respondents,q5b-confidence
+"q5b-confidence, survey option values",(no answer),1,115,respondents,q5b-confidence
+"q6b-confidence, survey option values",certain,62,115,respondents,q6b-confidence
+"q6b-confidence, survey option values",fairly-sure,46,115,respondents,q6b-confidence
+"q6b-confidence, survey option values",estimate,7,115,respondents,q6b-confidence
+"q7-introduction-path, survey option values",central,45,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",team,11,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",bottom-up,17,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",bundled,23,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",not-applicable,4,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",unknown,7,115,respondents,q7-introduction-path
+"q7-introduction-path, survey option values",other,8,115,respondents,q7-introduction-path
+"q8-personal-use, survey option values",yes,106,115,respondents,q8-personal-use
+"q8-personal-use, survey option values",no,9,115,respondents,q8-personal-use
+"q9-usage-modes, survey option values",autocomplete,58,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",chat,87,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",planning,68,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",local-agent,77,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",cloud-agent,24,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",code-review,55,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",test-generation,52,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",debugging,70,106,respondents,q9-usage-modes
+"q9-usage-modes, survey option values",(no answer),9,115,respondents,q9-usage-modes
+"q10-integrations, survey option values",none,55,106,respondents,q10-integrations
+"q10-integrations, survey option values",scm,40,106,respondents,q10-integrations
+"q10-integrations, survey option values",project-mgmt,17,106,respondents,q10-integrations
+"q10-integrations, survey option values",cicd,19,106,respondents,q10-integrations
+"q10-integrations, survey option values",infra,14,106,respondents,q10-integrations
+"q10-integrations, survey option values",monitoring,13,106,respondents,q10-integrations
+"q10-integrations, survey option values",communication,6,106,respondents,q10-integrations
+"q10-integrations, survey option values",unknown,0,106,respondents,q10-integrations
+"q10-integrations, survey option values",other,7,106,respondents,q10-integrations
+"q10-integrations, survey option values",(no answer),9,115,respondents,q10-integrations
+"q11b-benefit, survey option values",speed,38,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",quality,8,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",learning,14,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",reduced-toil,27,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",no-benefit,6,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",other,13,106,respondents,q11b-benefit
+"q11b-benefit, survey option values",(no answer),9,115,respondents,q11b-benefit
+"q12-policy, survey option values",specific,47,115,respondents,q12-policy
+"q12-policy, survey option values",general,49,115,respondents,q12-policy
+"q12-policy, survey option values",no,8,115,respondents,q12-policy
+"q12-policy, survey option values",unknown,11,115,respondents,q12-policy
+"q12b-confidence, survey option values",certain,54,115,respondents,q12b-confidence
+"q12b-confidence, survey option values",fairly-sure,37,115,respondents,q12b-confidence
+"q12b-confidence, survey option values",estimate,24,115,respondents,q12b-confidence
+"q13-support, survey option values",none,5,115,respondents,q13-support
+"q13-support, survey option values",informal,50,115,respondents,q13-support
+"q13-support, survey option values",shared-resources,26,115,respondents,q13-support
+"q13-support, survey option values",training,22,115,respondents,q13-support
+"q13-support, survey option values",structured,9,115,respondents,q13-support
+"q13-support, survey option values",unknown,3,115,respondents,q13-support
+"q14-decision-authority, survey option values",central,50,115,respondents,q14-decision-authority
+"q14-decision-authority, survey option values",approval-process,34,115,respondents,q14-decision-authority
+"q14-decision-authority, survey option values",team,7,115,respondents,q14-decision-authority
+"q14-decision-authority, survey option values",individual,8,115,respondents,q14-decision-authority
+"q14-decision-authority, survey option values",undecided,7,115,respondents,q14-decision-authority
+"q14-decision-authority, survey option values",unknown,9,115,respondents,q14-decision-authority
+"q15-data-sovereignty, survey option values",clarified,59,115,respondents,q15-data-sovereignty
+"q15-data-sovereignty, survey option values",partial,34,115,respondents,q15-data-sovereignty
+"q15-data-sovereignty, survey option values",no,7,115,respondents,q15-data-sovereignty
+"q15-data-sovereignty, survey option values",unknown,15,115,respondents,q15-data-sovereignty
+"q16-measurement, survey option values",none,8,115,respondents,q16-measurement
+"q16-measurement, survey option values",informal,50,115,respondents,q16-measurement
+"q16-measurement, survey option values",vendor-data,14,115,respondents,q16-measurement
+"q16-measurement, survey option values",own-metrics,13,115,respondents,q16-measurement
+"q16-measurement, survey option values",unknown,30,115,respondents,q16-measurement
+"q18-concerns, survey option values",security,39,115,respondents,q18-concerns
+"q18-concerns, survey option values",code-quality,65,115,respondents,q18-concerns
+"q18-concerns, survey option values",privacy,31,115,respondents,q18-concerns
+"q18-concerns, survey option values",ip,8,115,respondents,q18-concerns
+"q18-concerns, survey option values",skill-loss,82,115,respondents,q18-concerns
+"q18-concerns, survey option values",cost,20,115,respondents,q18-concerns
+"q18-concerns, survey option values",hallucinations,46,115,respondents,q18-concerns
+"q18-concerns, survey option values",workflow,8,115,respondents,q18-concerns
+"q18-concerns, survey option values",no-concerns,5,115,respondents,q18-concerns
+"q18-concerns, survey option values",other,8,115,respondents,q18-concerns
+"q20-trust, survey option values",always-review,28,115,respondents,q20-trust
+"q20-trust, survey option values",mostly-review,50,115,respondents,q20-trust
+"q20-trust, survey option values",quick-check,18,115,respondents,q20-trust
+"q20-trust, survey option values",usually-accept,9,115,respondents,q20-trust
+"q20-trust, survey option values",not-applicable,10,115,respondents,q20-trust
+"q21-perception-gap, survey option values",too-restrictive,18,115,respondents,q21-perception-gap
+"q21-perception-gap, survey option values",aligned,48,115,respondents,q21-perception-gap
+"q21-perception-gap, survey option values",too-liberal,23,115,respondents,q21-perception-gap
+"q21-perception-gap, survey option values",no-approach,21,115,respondents,q21-perception-gap
+"q21-perception-gap, survey option values",unknown,5,115,respondents,q21-perception-gap

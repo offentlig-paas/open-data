@@ -4,13 +4,14 @@ Survey of AI coding tool adoption, governance and concerns among developers and 
 
 - `ai-agents-2026-anonymous.csv`: anonymized responses, one row per respondent, without organization
 - `org-level-tables.csv`: organization-level results as aggregates
-- `respondent-level-aggregates.csv`: counts for size bands and tool categories that are merged in the CSV
+- `respondent-level-aggregates.csv`: counts per answer option for every closed question, including size bands and tool categories that are merged in the CSV
 - `CODEBOOK.md`: columns and codes
 - `instrument.md`: the survey instrument (Norwegian, with English translations)
 - `scripts/`: analysis and figure scripts
 
 ## Changes
 
+- 2026-10-20 (v1.2): `respondent-level-aggregates.csv` now has counts per answer option for all 23 closed questions, with a new `question_id` column. The values from v1.1 are unchanged. See `CODEBOOK.md`, "`respondent-level-aggregates.csv`".
 - 2026-10-20 (v1.1): multi-select answers (Q6, Q8b, Q9, Q10, Q20) are no longer published as raw combinations, because they could single out an organization. They are replaced by 0/1 flags for common options, top-coded counts and `shadow_use`. Every combination of role, team size, adoption level (Q5) and the approved-tool columns now has at least 3 respondents; values that broke this are set to `suppressed`. In the aggregate tables, single hidden counts that could be recovered from the totals are protected by hiding more cells (`suppressed`). See `CODEBOOK.md`, "Changes in v1.1".
 
 ## Reproduce the analysis
