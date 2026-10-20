@@ -9,7 +9,13 @@ Survey of AI coding tool adoption, governance and concerns among developers and 
 - `instrument.md`: the survey instrument (Norwegian, with English translations)
 - `scripts/`: analysis and figure scripts
 
+## Changes
+
+- 2026-10-20 (v1.1): multi-select answers (Q6, Q8b, Q9, Q10, Q20) are no longer published as raw combinations, because they could single out an organization. They are replaced by 0/1 flags for common options, top-coded counts and `shadow_use`. Every combination of role, team size, adoption level (Q5) and the approved-tool columns now has at least 3 respondents; values that broke this are set to `suppressed`. See `CODEBOOK.md`, "Changes in v1.1".
+
 ## Reproduce the analysis
+
+The scripts were written for the v1.0 file and do not run on v1.1, which no longer has the raw multi-select columns. The headline numbers below are from the paper and v1.0.
 
 Python 3.8 or newer (tested 3.8–3.14), standard library only.
 

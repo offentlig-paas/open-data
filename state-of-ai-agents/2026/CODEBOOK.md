@@ -1,20 +1,34 @@
 # Codebook: State of AI Coding Agents in the Norwegian Public Sector, Wave 1 (2026)
 
-File: `ai-agents-2026-anonymous.csv` (UTF-8, comma-separated, header row). 115 rows, one per respondent, 23 columns. Collected April–May 2026.
+File: `ai-agents-2026-anonymous.csv` (UTF-8, comma-separated, header row). 115 rows, one per respondent, 40 columns. Collected April–May 2026. This is version 1.1 (see [Changes in v1.1](#changes-in-v11)).
 
 ## Conventions
 
-- Multi-select answers are semicolon-separated codes (e.g. `copilot;claude-code`).
+- Multi-select answers are not published as combinations. They are replaced by derived columns (0/1 flags and counts), see [Derived columns](#derived-columns-v11). The column sections below for Q6, Q8b, Q9, Q10 and Q20 describe the question and its overall code counts only.
+- `suppressed`: the value is withheld so that every combination of the quasi-identifiers has at least 3 respondents, or because a small group would otherwise reveal a sensitive answer. See [Removed or changed for privacy](#removed-or-changed-for-privacy).
+- Section numbers below give the column order of version 1.0. In v1.1 the single-choice columns keep their order and the derived columns follow after Q23.
 - Empty cell: question not shown (respondents who answered `no` to personal use skip the personal-usage questions) or left blank.
 - `other`: the respondent chose "Annet" (other). The free text is not released. For the two tool questions, free-text answers are replaced by a tool category instead (`open-source` or an existing tool code); rare categories are merged into `other`, see columns 5 and 9.
 - Question numbers follow the Google Form used in the paper. The survey instrument (Norwegian, with English translations) uses its own design numbering; both are given below.
 - Codes are listed with their counts. The Norwegian response options from the instrument are given for reference, in instrument order; the codes are short English labels for these options.
 
+## Changes in v1.1
+
+Version 1.0 published multi-select answers as raw combinations. Combined with role and size, the set of approved tools (Q6) could single out an organization: 26 of 34 Q6 combinations were unique, and role, size and Q6 together made 40 of 115 rows unique. Version 1.1:
+
+- Removes the raw Q6, Q8b, Q9, Q10 and Q20 columns.
+- Adds per-option flags for Q6, Q8b and Q20 (only options chosen by at least 10 respondents; the rest are folded into `…_other`), top-coded counts (`q6_n_approved`, `q8b_n_used`, `q9_n_modes`, `q10_n_connected`) and `shadow_use`.
+- Merges Q5 into `formal` and `informal`, and folds approved tools other than Copilot and Claude Code into `q6_other`.
+- Guarantees k ≥ 3 on the quasi-identifier set role + developer team size + Q5 + `q6_copilot` + `q6_claude-code` + `q6_other` + `q6_n_approved`: every combination of these seven columns occurs in at least 3 rows. Unique rows on role + size + Q5 + Q6: 50 in v1.0, 0 in v1.1 (smallest group: 3). To reach this, 151 values in these columns are set to `suppressed` in 40 rows. No rows are removed.
+- In groups (equal on all seven columns) with fewer than 5 rows, Q23 and `shadow_use` are set to `suppressed` where every respondent in the group gave the same answer. This affects 38 values (Q23: 6, `shadow_use`: 32).
+
+Per-option counts for all codes, including the folded ones, are given in the column sections below and in `respondent-level-aggregates.csv`. The analysis scripts in `scripts/` were written for version 1.0 and do not run on version 1.1.
+
 ## Removed or changed for privacy
 
 - The organization column is removed. Responses came from 57 organizations, but the file does not say which responses share an organization. Results that need the organization (majority-vote organization values, intra-organization disagreement, organization-level correlations) are published as aggregates in `org-level-tables.csv`.
 - Role is given as three analytical groups only.
-- Developer team size bands below 200 are merged, and codes given by fewer than 3 respondents, and categories that could identify an organization (e.g. internal platforms), are merged into `other` (Q6, Q8b, Q11 `rarely`, Q19 `not-applicable`; see the column notes). The one exception is the `other` code in Q8b itself (2 respondents), which cannot be merged further. The result: every role × size combination has at least 3 respondents (smallest group: 4).
+- Developer team size bands below 200 are merged, and codes given by fewer than 3 respondents, and categories that could identify an organization (e.g. internal platforms), are merged into `other` (Q6, Q8b, Q11 `rarely`, Q19 `not-applicable`; see the column notes). The one exception is the `other` code in Q8b itself (2 respondents), which cannot be merged further. In version 1.1 the k ≥ 3 guarantee covers the larger quasi-identifier set described in [Changes in v1.1](#changes-in-v11).
 - Removed: timestamp, device and collection-channel columns, the original organization text, the free-text question on public-sector concerns (Q21), the interview opt-in (Q24) and contact details, and all free text entered under "other".
 
 - **Figures regenerated from the public CSV differ slightly from the paper.** The respondent who listed `open-source` as approved (Q6, fewer than 3) now has `other`. Figure 2 (`tool-landscape.svg`) therefore has no open-source approved bar, and Figure 3 (`shadow-adoption-flow.svg`) shows 16 open-source shadow users instead of 15. The paper's value (15) is in `respondent-level-aggregates.csv`.
@@ -32,7 +46,7 @@ File: `ai-agents-2026-anonymous.csv` (UTF-8, comma-separated, header row). 115 r
 - English: Approximately how many developers and technical personnel does your organization have? (Include both permanent employees and contracted consultants who write or maintain code for the organization. Total org headcount is sourced from public registries.)
 - Type: Single-select
 - Instrument options: Ingen — vi har ikke utviklere / 1–10 / 11–50 / 51–200 / Flere enn 200 / Vet ikke
-- Codes (count): `1-200` 75, `200+` 36, `unknown` 4. The form bands `1-10`, `11-50` and `51-200` are merged into `1-200` so that every role × size combination has at least 3 respondents. Counts for the original bands are in `respondent-level-aggregates.csv`.
+- Codes (count): `1-200` 75, `200+` 36, `unknown` 4 (v1.1: `1-200` 69, `200+` 34, `unknown` 3, `suppressed` 9). The form bands `1-10`, `11-50` and `51-200` are merged into `1-200` so that every role × size combination has at least 3 respondents. Counts for the original bands are in `respondent-level-aggregates.csv`.
 
 ### 3. `Hva beskriver best organisasjonens bruk av KI-kodeverktøy i dag?`
 
@@ -40,7 +54,8 @@ File: `ai-agents-2026-anonymous.csv` (UTF-8, comma-separated, header row). 115 r
 - English: Which best describes your organization's use of AI coding tools today? (Select the option that best describes the current situation. The three middle options distinguish between informal use by individuals, the organization having made an official decision but not everyone using the tools yet, and most developers actually having access and using them.)
 - Type: Single-select — behavioral anchor scale
 - Instrument options: Ikke i bruk, så vidt jeg vet / Enkeltpersoner bruker KI-verktøy på eget initiativ / Noen team har tatt i bruk KI-verktøy, men det finnes ingen organisasjonsomfattende tilnærming / Organisasjonen har offisielt godkjent eller anskaffet KI-kodeverktøy, men ikke alle team bruker dem ennå / De fleste utviklere har tilgang til og bruker KI-kodeverktøy / Vet ikke
-- Codes (count): `officially-approved` 45, `most-developers` 45, `some-teams` 17, `individual` 8
+- Codes (count) in v1.0: `officially-approved` 45, `most-developers` 45, `some-teams` 17, `individual` 8
+- v1.1 values: `formal` (`officially-approved` and `most-developers`) 86, `informal` (`some-teams` and `individual`) 20, `suppressed` 9
 
 ### 4. `Hvor sikker er du på svaret over? (Q5b)`
 
@@ -200,7 +215,27 @@ File: `ai-agents-2026-anonymous.csv` (UTF-8, comma-separated, header row). 115 r
 - English: Is there a gap between what your organization allows and what you consider responsible?
 - Type: Single-select
 - Instrument options: Organisasjonen er for restriktiv — vi burde bruke KI-verktøy mer / Organisasjonens tilnærming samsvarer med det jeg mener er forsvarlig / Organisasjonen er for liberal — vi burde ha strengere retningslinjer / Organisasjonen har ingen tydelig tilnærming, så det er vanskelig å si / Vet ikke / har ingen mening
-- Codes (count): `aligned` 48, `too-liberal` 23, `no-approach` 21, `too-restrictive` 18, `unknown` 5
+- Codes (count): `aligned` 48, `too-liberal` 23, `no-approach` 21, `too-restrictive` 18, `unknown` 5 (v1.1: 6 values `suppressed`, see [Changes in v1.1](#changes-in-v11))
+
+## Derived columns (v1.1)
+
+Flags are `1` (chosen) or `0`. Empty: question not shown. `suppressed`: see [Changes in v1.1](#changes-in-v11). Counts ignore `none` and `unknown`.
+
+| Column | Source | Values |
+|---|---|---|
+| `q6_copilot`, `q6_claude-code` | Q6 approved tools | `1`/`0`, `unknown` (only `unknown` chosen), `suppressed` |
+| `q6_other` | Q6 | `1` if any other approved tool (codex, cursor, jetbrains-ai, gemini, other) |
+| `q6_n_approved` | Q6 | number of approved tools: `0`, `1`, `2`, `3+` |
+| `q8b_copilot`, `q8b_claude-code`, `q8b_browser-llm`, `q8b_open-source`, `q8b_codex`, `q8b_gemini` | Q8b tools used | `1`/`0` |
+| `q8b_other` | Q8b | `1` if any other tool used (cursor, windsurf, jetbrains-ai, other) |
+| `q8b_n_used` | Q8b | number of tools used: `1`, `2`, `3`, `4+` |
+| `shadow_use` | Q8b and Q6 | `yes` if the respondent uses a tool (Q8b, in the merged v1.0 codes) not among the approved tools (Q6); `no`; `unknown` if Q6 is `unknown`; `suppressed` |
+| `q9_n_modes` | Q9 usage modes | number of modes: `1` to `5`, `6+` |
+| `q10_n_connected` | Q10 connected systems | number of systems (`none` = 0): `0`, `1`, `2`, `3+` |
+| `q20_skill-loss`, `q20_code-quality`, `q20_hallucinations`, `q20_security`, `q20_privacy`, `q20_cost` | Q20 concerns | `1`/`0` |
+| `q20_other` | Q20 | `1` if any other concern (ip, workflow, other, no-concerns) |
+
+`shadow_use` uses every tool, including `browser-llm` and `open-source`, so it matches the paper's broad shadow adoption only roughly. Because of suppression, its counts are not comparable with the paper; use `respondent-level-aggregates.csv` and the paper for shadow adoption rates.
 
 
 ## `org-level-tables.csv`
