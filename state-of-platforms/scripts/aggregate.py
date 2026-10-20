@@ -5,7 +5,11 @@ Usage: aggregate.py RESPONSES_CSV OUT_CSV
 Output columns: column, question, answer, n. One row per answer option.
 Multi-select answers count each listed option once per response; any text
 that is not a listed option is counted as "other" (once per response).
-Counts of 1 or 2 are written as "<3". The organization column is dropped.
+Counts of 1 or 2 are written as "<3". Within a question, if that leaves fewer
+than two hidden cells or a hidden total below 3, the next-smallest cells are
+also hidden (written as "suppressed") so no hidden count can be recovered from
+the response total. The rule is applied to multi-select questions too.
+The organization column is dropped.
 """
 
 import csv
@@ -63,6 +67,21 @@ def options(value, listed):
     return list(dict.fromkeys(found))
 
 
+def suppress(counts, k=MIN_CELL):
+    """Answers to hide: cells under k, plus the next-smallest until >= 2 cells and total >= k."""
+    hidden = [a for a, n in counts.items() if 0 < n < k]
+    if not hidden:
+        return set()
+    rest = sorted((a for a, n in counts.items() if n >= k), key=counts.get)
+    while (len(hidden) < 2 or sum(counts[a] for a in hidden) < k) and rest:
+        hidden.append(rest.pop(0))
+    return set(hidden)
+
+
+def cell(n, hidden):
+    return n if not hidden else f"<{MIN_CELL}" if n < MIN_CELL else "suppressed"
+
+
 def main(src, dst):
     with open(src, newline="", encoding="utf-8") as f:
         header, *rows = list(csv.reader(f))
@@ -84,8 +103,9 @@ def main(src, dst):
                     counts.update(options(v, MULTI[col]))
                 else:
                     counts[v] += 1
+            hidden = suppress(counts)
             for answer, n in counts.most_common():
-                w.writerow([col + 1, header[col], answer, n if n >= MIN_CELL else f"<{MIN_CELL}"])
+                w.writerow([col + 1, header[col], answer, cell(n, answer in hidden)])
 
 
 if __name__ == "__main__":

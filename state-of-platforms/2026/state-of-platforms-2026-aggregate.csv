@@ -54,7 +54,7 @@ column,question,answer,n
 8,Hvorfor lager dere plattform?,Støtte flere teknologier,10
 8,Hvorfor lager dere plattform?,other,6
 8,Hvorfor lager dere plattform?,(no answer),4
-8,Hvorfor lager dere plattform?,Noen ville ha en plattform,3
+8,Hvorfor lager dere plattform?,Noen ville ha en plattform,suppressed
 8,Hvorfor lager dere plattform?,Alle andre har en plattform!,<3
 9,Hvilke selvbetjente tjenester består plattformen deres av?,"Bygg, deploy og kjøre applikasjoner",40
 9,Hvilke selvbetjente tjenester består plattformen deres av?,"Logg, metrikker, dashbaords og alarmer",40
@@ -63,7 +63,7 @@ column,question,answer,n
 9,Hvilke selvbetjente tjenester består plattformen deres av?,Sikkerhet- og sårbarhets-scanning,33
 9,Hvilke selvbetjente tjenester består plattformen deres av?,Nettverk/brannmur (interntrafikk),28
 9,Hvilke selvbetjente tjenester består plattformen deres av?,Nettverk/brannmur (eksterntrafikk),26
-9,Hvilke selvbetjente tjenester består plattformen deres av?,(no answer),4
+9,Hvilke selvbetjente tjenester består plattformen deres av?,(no answer),suppressed
 9,Hvilke selvbetjente tjenester består plattformen deres av?,other,<3
 10,Ca. hvor mange applikasjonsteam benytter seg av plattformen deres i dag?,11-50,13
 10,Ca. hvor mange applikasjonsteam benytter seg av plattformen deres i dag?,0-5,11
@@ -95,19 +95,19 @@ column,question,answer,n
 14,Hvordan benytter brukere plattformfunksjonalitet?,"Nivå 3, Skalerbar — Selvbetjeningsløsninger",21
 14,Hvordan benytter brukere plattformfunksjonalitet?,"Nivå 2, Operasjonalisert — Standardverktøy",13
 14,Hvordan benytter brukere plattformfunksjonalitet?,"Nivå 1, Provisorisk – Tilpassede prosesser",5
-14,Hvordan benytter brukere plattformfunksjonalitet?,"Nivå 4, Optimalisering — Administrerte tjenester",4
+14,Hvordan benytter brukere plattformfunksjonalitet?,"Nivå 4, Optimalisering — Administrerte tjenester",suppressed
 14,Hvordan benytter brukere plattformfunksjonalitet?,(no answer),4
 14,Hvordan benytter brukere plattformfunksjonalitet?,N/A,<3
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?","Nivå 3, Skalerbar — Sentralt aktivert",20
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?","Nivå 2, Operasjonalisert — Sentralt registrert",10
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?","Nivå 1, Provisorisk — På forespørsel",8
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?","Nivå 4, Optimalisering — Administrerte tjenester",5
-15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?",(no answer),4
+15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?",(no answer),suppressed
 15,"Hvordan planlegges, prioriteres, utvikles og vedlikeholdes plattformer og deres funksjonalitet?",N/A,<3
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 1, Provisorisk – Ad hoc",21
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 2, Operasjonalisert — Konsekvent innsamling",16
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 3, Skalerbar — Innsikt",5
-16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,(no answer),4
+16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,(no answer),suppressed
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,N/A,<3
 16,Hva er prosessen for å samle inn og lære av tilbakemeldinger?,"Nivå 4, Optimalisering — Kvantitativ og kvalitativ",<3
 17,Bruker dere Kubernetes?,Ja,40
@@ -153,14 +153,14 @@ column,question,answer,n
 21,Hvor mange applikasjoner i produksjon har dere på Kubernetes?,1000-2000,<3
 22,Utvikler dere egne Kubernetes operators?,Ja,21
 22,Utvikler dere egne Kubernetes operators?,Nei,17
-22,Utvikler dere egne Kubernetes operators?,(no answer),8
+22,Utvikler dere egne Kubernetes operators?,(no answer),suppressed
 22,Utvikler dere egne Kubernetes operators?,Vet ikke,<3
 23,Kjører dere databaser i Kubernetes?,Nei,24
 23,Kjører dere databaser i Kubernetes?,Ja,12
 23,Kjører dere databaser i Kubernetes?,other,9
 23,Kjører dere databaser i Kubernetes?,(no answer),8
 23,Kjører dere databaser i Kubernetes?,CloudNativePG,6
-23,Kjører dere databaser i Kubernetes?,Zalando Postgres Operator,5
+23,Kjører dere databaser i Kubernetes?,Zalando Postgres Operator,suppressed
 23,Kjører dere databaser i Kubernetes?,Vet ikke,<3
 24,Bruker dere sky for plattformen deres?,Ja,33
 24,Bruker dere sky for plattformen deres?,Nei,15
@@ -188,7 +188,7 @@ column,question,answer,n
 28,Benytter dere serverless funksjoner?,(no answer),28
 28,Benytter dere serverless funksjoner?,Azure Functions,8
 28,Benytter dere serverless funksjoner?,AWS Lambda,7
-28,Benytter dere serverless funksjoner?,Google Cloud Run,5
+28,Benytter dere serverless funksjoner?,Google Cloud Run,suppressed
 28,Benytter dere serverless funksjoner?,Google Cloud Functions,<3
 29,Hva bruker dere for overvåking av applikasjoner?,Grafana,38
 29,Hva bruker dere for overvåking av applikasjoner?,Prometheus,35
@@ -215,7 +215,7 @@ column,question,answer,n
 30,Hva bruker dere for pakking av applikasjoner?,(no answer),10
 30,Hva bruker dere for pakking av applikasjoner?,JIB,7
 30,Hva bruker dere for pakking av applikasjoner?,other,4
-30,Hva bruker dere for pakking av applikasjoner?,Buildpacks,3
+30,Hva bruker dere for pakking av applikasjoner?,Buildpacks,suppressed
 30,Hva bruker dere for pakking av applikasjoner?,Packer,<3
 30,Hva bruker dere for pakking av applikasjoner?,Jsonnet,<3
 31,Hva bruker dere for deploy av applikasjoner?,GitHub Actions,25
@@ -224,7 +224,7 @@ column,question,answer,n
 31,Hva bruker dere for deploy av applikasjoner?,GitLab Pipelines,7
 31,Hva bruker dere for deploy av applikasjoner?,Flux,7
 31,Hva bruker dere for deploy av applikasjoner?,kubectl apply,7
-31,Hva bruker dere for deploy av applikasjoner?,other,4
+31,Hva bruker dere for deploy av applikasjoner?,other,suppressed
 31,Hva bruker dere for deploy av applikasjoner?,Jenkins,4
 31,Hva bruker dere for deploy av applikasjoner?,Harness,<3
 32,Hva bruker dere for nettverksikkerhet?,NetworkPolicies,18
@@ -232,7 +232,7 @@ column,question,answer,n
 32,Hva bruker dere for nettverksikkerhet?,cert-manager,14
 32,Hva bruker dere for nettverksikkerhet?,Cilium,13
 32,Hva bruker dere for nettverksikkerhet?,Istio,8
-32,Hva bruker dere for nettverksikkerhet?,other,4
+32,Hva bruker dere for nettverksikkerhet?,other,suppressed
 32,Hva bruker dere for nettverksikkerhet?,Linkerd,<3
 33,Hva bruker dere for applikasjonsikkerhet?,(no answer),19
 33,Hva bruker dere for applikasjonsikkerhet?,Kyverno,13
